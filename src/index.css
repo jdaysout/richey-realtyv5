@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/base.css';
+
+/* Prevent horizontal scroll and bouncing on iOS */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
+}
+
+/* Ensure content doesn't overflow */
+#root {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
